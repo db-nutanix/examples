@@ -1,5 +1,6 @@
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - patch-frontend-replicas.yaml
+patches:
+  - path: patch-frontend-replicas.yaml
+  - path: patch-frontend-service.yaml
